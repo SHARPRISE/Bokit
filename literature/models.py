@@ -12,3 +12,12 @@ class Literature(models.Model):
     date_posted = models.DateField(auto_now_add=True, verbose_name='Posted on')
     poster = models.CharField(max_length=255, default='Poster')
     slug = models.SlugField(unique=True, max_length=255, default='slug')
+
+    def __str__(self):
+        return self.title
+
+    def __unicode__(self):
+        return u'%s' % self.title
+
+    def get_absolute_url(self):
+        return reverse('literature.views.text', args=[self.slug])

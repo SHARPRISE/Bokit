@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'pictures',
+    'literature',
     #third party apps
     'social_django',
 ]

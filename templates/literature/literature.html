@@ -1,0 +1,8 @@
+{% extends 'registration/base.html' %}
+
+{% for text in texts %}
+<h1> {{ text.title }} </h1>
+<h2> {{ text.author }} </h2>
+<h3> {{ text.era }} </h3>
+<p> {{ text.description }} </p>
+{% endfor %}
