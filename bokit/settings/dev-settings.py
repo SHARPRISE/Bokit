@@ -25,7 +25,7 @@ SECRET_KEY = 'k-%(k)4*wk37crra71wkut+28254kk*=rwtcj3&2svwjqshfh#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 #Please set your environment variable accordingly
 DJANGO_SETTINGS_MODULE = 'bokit.settings.dev-settings'
