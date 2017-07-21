@@ -27,5 +27,5 @@ class PictureArt(models.Model):
     def __unicode__(self):
         return u'%s' % self.title
 
-#    def get_absolute_url(self):
-#        return reverse('pictures.views.picture', args=[self.slug])
+    def get_absolute_url(self):
+        return reverse('pictures.views.picture', args=[self.slug])
