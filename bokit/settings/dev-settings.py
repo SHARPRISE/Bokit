@@ -37,8 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #homemade apps
     'pictures',
     'literature',
+    'artist',
     #third party apps
     'social_django',
 ]

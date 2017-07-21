@@ -1,12 +1,12 @@
 from django.db import models
 
 # Create your models here.
-class Artist(models.Model):
-    name = models.CharField(max_length=255)
-    mediums = models.ManyToManyField(Genre)
+class Genre(models.Model):
+    name = models.CharField(max_length=50)
 
     def __str__(self):
         return self.name
+
 
 class Medium(models.Model):
     name = models.CharField(max_length=50)
@@ -15,8 +15,10 @@ class Medium(models.Model):
     def __str__(self):
         return self.name
 
-class Genre(models.Model):
-    name = models.CharField(max_length=50)
+
+class Artist(models.Model):
+    name = models.CharField(max_length=255)
+    mediums = models.ManyToManyField(Medium)
 
     def __str__(self):
         return self.name

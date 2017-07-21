@@ -2,6 +2,17 @@ from django.db import models
 from pictures.models import ERAS
 
 # Create your models here.
+ERAS = (
+    ('1', '1950'),
+    ('2', '1960'),
+    ('3', '1970'),
+    ('4', '1980'),
+    ('5', '1990'),
+    ('6', '2000'),
+    ('7', '2010'),
+    ('99', 'Unknown')
+)
+
 
 class Literature(models.Model):
     title = models.CharField(max_length=100, default='Text Title')
