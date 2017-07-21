@@ -27,8 +27,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-#Please set your environment variable accordingly
-DJANGO_SETTINGS_MODULE = 'bokit.settings.dev-settings'
 
 # Application definition
 
