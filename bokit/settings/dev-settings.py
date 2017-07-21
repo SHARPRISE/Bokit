@@ -27,8 +27,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-#Please set your environment variable accordingly
-DJANGO_SETTINGS_MODULE = 'bokit.settings.dev-settings'
 
 # Application definition
 
@@ -149,5 +147,3 @@ SOCIAL_AUTH_TWITTER_SECRET = os.environ.get('SOCIAL_AUTH_TWITTER_SECRET')
 
 SOCIAL_AUTH_FACEBOOK_KEY = os.environ.get('SOCIAL_AUTH_FACEBOOK_KEY')
 SOCIAL_AUTH_FACEBOOK_SECRET = os.environ.get('SOCIAL_AUTH_FACEBOOK_SECRET')
-
-print(SOCIAL_AUTH_TWITTER_KEY, SOCIAL_AUTH_FACEBOOK_KEY)
