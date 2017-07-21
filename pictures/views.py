@@ -7,7 +7,7 @@ from .models import PictureArt
 
 def pictures(request):
     # gets the picture art page
-    picture = PictureArt.objects.order_by('date_posted').reverse
+    picture = PictureArt.objects.order_by('date_posted')
     "Renders the Picture Art page"
     assert isinstance(request, HttpRequest)
     return render(

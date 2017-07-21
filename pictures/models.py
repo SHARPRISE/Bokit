@@ -8,7 +8,8 @@ ERAS = (
     ('3', 'Independance War'),
     ('4', '19th Century'),
     ('5', '20th Century'),
-    ('6', '21st Century/Modern')
+    ('6', '21st Century/Modern'),
+    ('7', 'Unknown')
 )
 
 class PictureArt(models.Model):
