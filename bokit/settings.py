@@ -73,12 +73,8 @@ WSGI_APPLICATION = 'bokit.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
+import dj_database_url
+DATABASES ={'default':dj_database_url.config(default='postgres://azzbhwvznpppze:97145d05dd01198138104f54cb28f874bec5d6c5b053b8f0172c78765aa6d315@ec2-54-163-254-143.compute-1.amazonaws.com:5432/dclo03rhqndanf')}
 
 
 # Password validation
